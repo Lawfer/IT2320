@@ -1,0 +1,50 @@
+body {
+    background-color: lightgreen;
+}
+
+h1, h2 {
+    font-family: cursive;
+    font-style: italic;
+}
+
+.standard paragraph {
+    font-size: 1.5em;
+}
+
+a {
+    font-size: 1.5em;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+.format {
+    width: 80%; 
+    align-content: center; 
+    border: 1px solid black;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: blue;
+}
+
+.black {
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -5,11 +5,14 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<script src="scripts.js"></script>
 <h1>Magic: the Gathering - An Introduction</h1>
 
-<img src="image.jpg" align="right">
-
+<table class="image" align="right">
+<tr><td><img id="Arlinn" src="Arlinn.jpg" align="right" onclick="Transform();"></td></tr>
+<tr><td class="caption">Click on Arlinn to Transform her!</td></tr>
+</table>
+    
 <h2>A Brief History</h2>
 
 <div class="standard paragraph">Magic: the Gathering, or MTG, is a competitive strategic card game that was created in 1993 by Richard Garfield. Since then, it has gone on to be one of the largest selling collectible card games, releasing over 16,000 uniquie cards over the past 24 years. Players travel from all over the world to compete in four Pro Tours yearly, each marking the release of a new set of cards. </div>
@@ -19,11 +22,11 @@
 <div class="standard paragraph">Magic cards come in five different colors, as well are cards that have no color. These colors are White, Blue, Black, Red, and Green. These colors serve to create philosophical divides between the types of creatures and effects that occur within each color, as well as the strategies for victory in each color or combination of colors. </div>
     
 <ul>
-    <li class="white">White - Focuses on life and order.</li>
-    <li class="blue">Blue - Focuses and knowledge and curiousity.</li>
-    <li class="black">Black - Focuses on death and necromancy.</li>
-    <li class="red">Red - Focuses on chaos and aggression.</li>
-    <li class="green">Green - Focuses on nature and ferocity.</li>
+    <li class="white" onmouseover="MouseOver(this)">White - Focuses on life and order.</li>
+    <li class="blue" onmouseover="MouseOver(this)">Blue - Focuses and knowledge and curiousity.</li>
+    <li class="black" onmouseover="MouseOver(this)">Black - Focuses on death and necromancy.</li>
+    <li class="red" onmouseover="MouseOver(this)">Red - Focuses on chaos and aggression.</li>
+    <li class="green" onmouseover="MouseOver(this)">Green - Focuses on nature and ferocity.</li>
     </ul>
     
 <h2>Formats</h2>

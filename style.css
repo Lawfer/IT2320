@@ -48,3 +48,8 @@ li {
 .bold {
     font-weight: bold;
 }
+
+li.highlight {
+    font-weight: bold;
+    font-size: 6em;
+}

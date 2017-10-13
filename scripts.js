@@ -15,8 +15,3 @@ function Transform() {
             tracker = "Arlinn";
         }
 }
-
-function MouseOver()
-{
-    x.className = "li.highlight";
-}

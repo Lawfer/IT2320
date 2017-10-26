@@ -1,40 +1,40 @@
 var Main = {};
-
-Main.Person = function(firstName, lastName, actorFirstName, actorLastName, image)
+Main.Person = function(firstName, lastName, actorFirstName, actorLastName, pic)
 {
     this.FirstName = firstName;
     this.LastName = lastName;
     this.ActorFirstName = actorFirstName;
     this.ActorLastName = actorLastName;
-    this.image = Image;
+    this.Pic = pic;
 }
 
 Main.Person.prototype.GetCharacterName = function()
     {
-        return this.FirstName + " " + this.LastName
-    };
+        var Char = this.FirstName + " " + this.LastName;
+        return Char;
+    }
     
 Main.Person.prototype.GetActorName = function()
     {
         return this.ActorFirstName + " " + this.ActorLastName
     };
-Main.Person.prototype.GetImage = function()
+Main.Person.prototype.GetImage = function(src)
     {
-        var x = new Image(140, 209);
-        x.src = this.pic;
-        document.body.appendChild(x);
-        return "<img src='" + this.x.src + "'>"
+    return "<img src='" + this.Pic + "'>" 
     };
 Main.Person.prototype.CreateTable = function()
 {
+    var x = this.GetImage();
+    var y = this.GetCharacterName();
+    var z = this.GetActorName();
     var table = document.getElementById("HouseStark");
     var row = table.insertRow(-1);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
-    cell1.innerHTML = this.GetImage;
-    cell2.innerHTML = this.GetCharacterName;
-    cell3.innerHTML = this.GetActorName;
+    cell1.innerHTML = x;
+    cell2.innerHTML = y;
+    cell3.innerHTML = z;
 }
 
 Main.Ned = new Main.Person("Ned", "Stark", "Sean", "Bean", "nedstark.jpg");

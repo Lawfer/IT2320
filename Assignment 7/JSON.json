@@ -1,0 +1,27 @@
+{"city": "Winterfell"},
+{"house": "Stark"},
+{"location":"North"}
+{"family":[
+    {"firstName":"Eddard", "lastName":"Stark", "actorFirstName":"Sean", "actorLastName":"Bean", "status":"deceased"},
+    {"firstName":"Catelyn", "lastName":"Stark", "actorFirstName":"Michelle", "actorLastName":"Fairley", "status":"deceased"},
+    {"firstName":"Robb", "lastName":"Stark", "actorFirstName":"Richard", "actorLastName":"Madden", "status":"deceased"},
+    {"firstName":"Sansa", "lastName":"Stark", "actorFirstName":"Sophie", "actorLastName":"Turner", "status":"living"},
+    {"firstName":"Arya", "lastName":"Stark", "actorFirstName":"Maisie", "actorLastName":"Williams", "status":"living"},
+    {"firstName":"Bran", "lastName":"Stark", "actorFirstName":"Issac", "actorLastName":"Wright", "status":"living"},
+    {"firstName":"Rickon", "lastName":"Stark", "actorFirstName":"Art", "actorLastName":"Parkinson", "status":"deceased"},
+    {"firstName":"Jon", "lastName":"Snow", "actorFirstName":"Kit", "actorLastName":"Harrington", "status":"living"}
+    
+]}
+
+{"city": "Casterly Rock"},
+{"house": "Lannister"},
+{"location":"East"}
+{"family":[
+    {"firstName":"Tywin", "lastName":"Lannister", "actorFirstName":"Charles", "actorLastName":"Dance", "status":"deceased"},
+    {"firstName":"Cersi", "lastName":"Lannister", "actorFirstName":"Lena", "actorLastName":"Headey", "status":"living"},
+    {"firstName":"Jaime", "lastName":"Lannister", "actorFirstName":"Nikolaj", "actorLastName":"Coster-Waldau", "status":"living"},
+    {"firstName":"Tyrian", "lastName":"Lannister", "actorFirstName":"Peter", "actorLastName":"Dinklage", "status":"living"},
+    {"firstName":"Joffrey", "lastName":"Baratheon", "actorFirstName":"Jack", "actorLastName":"Gleeson", "status":"deceased"},
+    {"firstName":"Myrcella", "lastName":"Baratheon", "actorFirstName":"Nell", "actorLastName":"Free", "status":"deceased"},
+    {"firstName":"Tommen", "lastName":"Baratheon", "actorFirstName":"Dean-Charles", "actorLastName":"Chapman", "status":"deceased"}
+]}

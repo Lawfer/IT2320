@@ -57,3 +57,38 @@ li.highlight {
 img.Arlinn {
     align-content: right;
 }
+
+.main-body
+{
+	width: 80%;
+}
+
+@media screen and (max-width: 320px)
+{
+	.main-body { display: block; }
+    .Arlinn {margin: auto;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px)
+{
+	.main-body { display: block; }
+    .Arlinn {margin: auto;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px)
+{
+	.main-body { display: inline-block; }
+    .Arlinn {margin: auto;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+	.main-body { display: inline-block; }
+    .Arlinn {float: right;}
+}
+
+@media screen and (min-width: 1025px)
+{
+    .main-body { display: inline-block;} 
+    .Arlinn {float: right;}
+}

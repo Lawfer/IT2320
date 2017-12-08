@@ -1,0 +1,135 @@
+.shape {
+    width: 400px;
+    height: 200px;
+}
+
+#Circle {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    -webkit-animation: Circle 2s infinite;
+    -webkit-animation-name: Circle;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+    animation: Circle 2s infinite;
+    animation-name: Circle;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes Circle {
+    0%   {background-color:red; left:0px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes Circle {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+#Square {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    -webkit-animation: Square 2s infinite;
+    -webkit-animation-name: Square;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-delay: 2s;
+    animation: Square 2s infinite;
+    animation-name: Square;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes Square {
+    0%   {left: 0px; top:0px;}
+    25%  {left: -200px; top 0px;}
+    50%  {left: 0px; top:0px;}
+    75%  {left: 200px; top 0px;}
+    100%  {left:0px; top:0px;}
+}
+@keyframes Square {
+    0%   {left: 0px; top:0px;}
+    25%  {left: -200px; top 0px;}
+    50%  {left: 0px; top:0px;}
+    75%  {left: 200px; top 0px;}
+    100%  {left:0px; top:0px;}
+}
+
+#Rectangle {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    -webkit-animation: Rectangle 2s infinite;
+    -webkit-animation-name: Rectangle;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-delay: 2s;
+    animation: Rectangle 2s infinite;
+    animation-name: Rectangle;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes Rectangle {
+    0%   {left: 0px; top:0px;}
+    50%  {left: 0px; top:200px;}
+    100% {left: 0px; top:0px;}
+}
+@keyframes Rectangle {
+    0%   {left: 0px; top:0px;}
+    50%  {left: 0px; top:200px;}
+    100% {left: 0px; top:0px;}
+}
+
+#Rhombus {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    -webkit-animation: Rhombus 2s infinite;
+    -webkit-animation-name: Rhombus;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-delay: 2s;
+    animation: Rhombus 2s infinite;
+    animation-name: Rhombus;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes Rhombus {
+    0%   {left: 0px; top:0px;}
+    25%  {left: 0px; top:200px;}
+    50%  {left: 200px; top:200px;}
+    75%  {left: 200px; top:0px;}
+    100% {left: 0px; top:0px;}
+}
+@keyframes Rhombus {
+    0%   {left: 0px; top:0px;}
+    25%  {left: 0px; top:200px;}
+    50%  {left: 400px; top:0px;}
+    75%  {left: 400px; top:200px;}
+    100% {left: 0px; top:0px;}
+}
+
+#Triangle {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    -webkit-animation: Triangle 2s infinite;
+    -webkit-animation-name: Triangle;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-delay: 2s;
+    animation: Triangle 2s infinite;
+    animation-name: Triangle;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes Triangle {
+    0%   {left: 0px; top:0px;}
+    50%  {left: 0px; top:200px;}
+    100% {left: 0px; top:0px;}
+}
+@keyframes Triangle {
+    0%   {left: 0px; top:0px;}
+    50%  {left: 0px; top:200px;}
+    100% {left: 0px; top:0px;}
+}
+
+
+

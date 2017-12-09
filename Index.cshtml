@@ -1,0 +1,21 @@
+﻿<html>
+
+    <head>
+        <link href="~/Styles/Home.css" rel="stylesheet" />
+        <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+        <script src="~/Scripts/Home.js"></script>
+        <title>Introduction to AngularJS</title>
+    </head>
+
+    <body>
+
+        <table ng-app="my-module" ng-controller="my-root-controller" border="1">
+            <tr ng-repeat="x in players">
+                <td>{{x.FirstName}}</td>
+                <td>{{x.LastName}}</td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>

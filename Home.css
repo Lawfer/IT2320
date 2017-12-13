@@ -1,50 +1,146 @@
-body {
-    width: 520px;
-    font-family: "Calibri";
-    font-size: 12px;
-    font-weight: regular;
-    text-align:  left;
-}
+    body {
+        width: 520px;
+        font-family: "Calibri";
+        font-size: 12px;
+        font-weight: regular;
+        text-align: left;
+    }
 
-h1 {
-    font-family: "Calibri";
-    font-size: 16px;
-    font-weight: bold;
-    text-align:  left;
-}
+    h1 {
+        font-family: "Calibri";
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+    }
 
-.legal {
-    font-family: "Calibri";
-    font-size: 12px;
-    font-style: italic;
-    text-align:  left;
-}
+    .legal {
+        font-family: "Calibri";
+        font-size: 12px;
+        font-style: italic;
+        text-align: left;
+    }
 
-.logintable {
-    border: 1px solid black;
-    margin: auto;
-}
+    .logintable {
+        border: 1px solid black;
+        margin: auto;
+    }
 
-.registertable {
-    border: 1px solid black;
-    margin: auto;
-}
+    .registertable {
+        border: 1px solid black;
+        margin: auto;
+    }
 
-.input {
-}
+    #logintextmobile {
+        display: none;
+    }
 
+    #registertextmobile {
+        display: none;
+    }
 
+    .inputbox {
+        flex: 2;
+    }
 
-#registertext {
-    float: left;
+    span {
+        padding-top: 12px;
+        width: 200px;
+        float: left;
+    }
+
+#registertext > span {
+    padding-top: 25px;
     width: 200px;
-}
-
-.inputbox {
-    display:inline-table;
-}
-
-span {
     float: left;
-    width: 200px;
 }
+
+    .input {
+        display:flex;
+    }
+
+.label {
+        flex: 1;
+}
+
+.button1 {
+    text-align: right;
+    padding-right: 100;
+}
+
+.button2 {
+    text-align: right;
+    padding-right: 73;
+}
+
+@media screen and (max-width: 320px) {
+
+    body {
+        width: 300px;
+        font-family: "Calibri";
+        font-size: 12px;
+        font-weight: regular;
+        margin: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: "Calibri";
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .legal {
+        font-family: "Calibri";
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .logintable {
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+    }
+
+    .registertable {
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+    }
+
+    #logintext {
+        display: none;
+    }
+
+    #logintextmobile {
+        display: block;
+        font-weight: bold;
+    }
+
+    #registertext {
+        display: none;
+    }
+
+    #registertextmobile {
+        display: block;
+        font-weight: bold;
+    }
+
+    .input {
+        text-align: left;
+    }
+
+    .inputbox {
+        text-align: right;
+    }
+
+    .button1 {
+        text-align: center;
+    }
+
+    .button2 {
+        text-align: center;
+    }
+}
+

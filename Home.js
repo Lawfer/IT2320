@@ -1,32 +1,14 @@
 var Home = {}
 
-Home.Button1Click = function () {
-    $.get("Home/Login", function (rawResponseData, status) {
-        
-
-        var deserializedData = JSON.parse(rawResponseData);
-        data: {
-            Username: $("#loginruser").val(),
-            Password: $("#loginpass").val(),
-              }
-
-    });
+Button1Click = function () {
+    alert("Moo");
 }
 
-Home.Button2Click = function () {
-    $.ajax
-        ({
-            url: "Home/CreateAccount",
-            data: {
-                Username: $("#registeruser").val(),
-                Password: $("#registerpass").val(),
-                EmailAdd: $("#registeremail").val(),
-                EmailCon: $("#registerconfirmemail").val()},
-            success: function (result) { alert(result); }
-        });
+Button2Click = function () {
+    alert("Cow");
 }
 
 $(document).ready(function () {
-    $(".button1").click(Home.Button1Click);
-    $("#register").click(Home.Button2Click);
+    $("#login").click(Button1Click);
+    $("#register").click(Button2Click);
 });

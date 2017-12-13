@@ -1,20 +1,69 @@
-﻿<html>
+@model FinalProject.Models.HomeViewModel
+
+<html>
 
     <head>
         <link href="~/Styles/Home.css" rel="stylesheet" />
-        <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
-        <script src="~/Scripts/Home.js"></script>
-        <title>Introduction to AngularJS</title>
+        <title>Final Project</title>
     </head>
 
     <body>
-
-        <table ng-app="my-module" ng-controller="my-root-controller" border="1">
-            <tr ng-repeat="x in players">
-                <td>{{x.FirstName}}</td>
-                <td>{{x.LastName}}</td>
-            </tr>
-        </table>
+        
+        <h1 class="header">Welcome to Cuyahoga Community College Student Services Online</h1>
+            
+        <div class="legal">Cuyahoga Community College recognizes students' rights to access personal and academic records in accordance with the Family Educational Rights and Privacy Act of 1974 (FERPA) as amended by Public Law 93-568.</div>
+        
+        
+        <div class ="logintable">
+        
+            <div id = "logintext"><span>Already have an account with us? Returning users may log in by entering their site username and password.</span></div>
+            
+                <div class="input" id="loginuser" align="right">
+                Username <input class = "inputbox">    
+                </div>
+            
+                <div class="input" id="loginpass" align="right">
+                Password <input class= "inputbox">
+                </div>
+                
+                <div class="login" id="login" align="right">
+                <button class="button1">Log In</button>
+                </div>
+            
+        </div>
+        
+        <div class ="registertable">
+        
+            <div id = "registertext"><span>New users, please create a new account by providing us with some basic information.</span></div>
+            
+                <div class="input" id="registeruser" align="right">
+                Username <input class = "inputbox">    
+                </div>
+            
+                <div class="input" id="registerpass" align="right">
+                Password <input class= "inputbox">
+                </div>
+            
+                <div class="input" id="registeremail" align="right">
+                E-Mail Address <input class= "inputbox">
+                </div>
+            
+                <div class="input" id="registerconfirmemail" align="right">
+                Repeat E-Mail Address <input class= "inputbox">
+                </div>
+                
+                <div class="button2" id="register" align="right">
+                <button type="submit">Create Account</button>
+                </div>
+            
+        </div>
+        
+        
+        <div id="footer">Cuyahoga Community College<br>700 Carnegie Avenue, Cleveland, OH 44115</div>
+        
+        <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui.min.js"></script>
+        <script src="~/Scripts/Home.js"></script>
 
     </body>
 

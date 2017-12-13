@@ -1,64 +1,32 @@
-﻿var highlighted = false;
-var selected = {};
+var Home = {}
 
-SelectPiece = function (element) {
-
-    $(element).css("border", "1px solid red");
-
-    selected = element;
-    highlighted = true;
-}
-
-MovePiece = function (targetElement) {
-
-    targetElement.className = selected.className;
-
-    $(selected).css("border", "1px solid black");
-    selected.className = "cell";
-
-    highlighted = false;
-    selected = {};
-}
-
-DeselectPiece = function (targetElement) {
-    $(selected).css("border", "1px solid black");
-
-    highlighted = false;
-    selected = {};
-}
-$(document).ready(function () {
-    var cells = $(".cell");
-    var colorCount = 0;
-
-    for (var i = 0; i < cells.length; i++) {
-        var cell = $(cells[i]);
-        var isDark = colorCount % 2 == 0;
-        var isNextRow = (i + 1) % 8 == 0;
-        colorCount += isNextRow ? 2 : 1;
-        cell.css("background-color", isDark ? "navy" : "white");
-    }
-
-    $(".cell").click(function () {
-
-        if (!highlighted) {
-            if ($(this).hasClass("piece")) {
-                SelectPiece(this)
-            }
-
+Home.Button1Click = function () {
+    $.get("Home/Login", function (rawResponseData, status) {
         
 
-        }
-
-        else {
-            if (selected == this) {
-                DeselectPiece(this)
-            }
-            else {
-                MovePiece(this)
-            }
-        }
-        
+        var deserializedData = JSON.parse(rawResponseData);
+        data: {
+            Username: $("#loginruser").val(),
+            Password: $("#loginpass").val(),
+              }
 
     });
+}
 
+Home.Button2Click = function () {
+    $.ajax
+        ({
+            url: "Home/CreateAccount",
+            data: {
+                Username: $("#registeruser").val(),
+                Password: $("#registerpass").val(),
+                EmailAdd: $("#registeremail").val(),
+                EmailCon: $("#registerconfirmemail").val()},
+            success: function (result) { alert(result); }
+        });
+}
+
+$(document).ready(function () {
+    $(".button1").click(Home.Button1Click);
+    $("#register").click(Home.Button2Click);
 });

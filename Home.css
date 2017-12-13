@@ -1,0 +1,50 @@
+body {
+    width: 520px;
+    font-family: "Calibri";
+    font-size: 12px;
+    font-weight: regular;
+    text-align:  left;
+}
+
+h1 {
+    font-family: "Calibri";
+    font-size: 16px;
+    font-weight: bold;
+    text-align:  left;
+}
+
+.legal {
+    font-family: "Calibri";
+    font-size: 12px;
+    font-style: italic;
+    text-align:  left;
+}
+
+.logintable {
+    border: 1px solid black;
+    margin: auto;
+}
+
+.registertable {
+    border: 1px solid black;
+    margin: auto;
+}
+
+.input {
+}
+
+
+
+#registertext {
+    float: left;
+    width: 200px;
+}
+
+.inputbox {
+    display:inline-table;
+}
+
+span {
+    float: left;
+    width: 200px;
+}

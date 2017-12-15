@@ -1,4 +1,4 @@
-@model FinalProject.Models.HomeViewModel
+﻿@model FinalProject.Models.HomeViewModel
 
 <html>
 
@@ -9,70 +9,87 @@
     </head>
 
     <body>
-        
-        <h1 class="header">Welcome to Cuyahoga Community College Student Services Online</h1>
-            
-        <div class="legal">Cuyahoga Community College recognizes students' rights to access personal and academic records in accordance with the Family Educational Rights and Privacy Act of 1974 (FERPA) as amended by Public Law 93-568.</div>
-        
-        
-        <div class ="logintable">
-        
-            <div id = "logintext"><span>Already have an account with us? Returning users may log in by entering their site username and password.</span></div>
-            <div id = "logintextmobile">Login</div>
-                
-            <div class="input">
-                <div class="label">Username</div> 
-                <div class="inputbox"><input></div>
-            </div>
-                
-            <div class="input">
-                <div class="label" id="loginpass">Password</div>
-                <div class= "inputbox"><input></div>
-            </div>
-                
-            <div class="button1" id="login">
-            <button type="submit" class="login">Log In</button>
-            </div>
-            
-        </div>
-        
-        <div class ="registertable">
-        
-            <div id = "registertext"><span>New users, please create a new account by providing us with some basic information.</span></div>
-            <div id = "registertextmobile">Create Account</div>
-                
-            <div class="input">
-                <div class="label" id="registeruser">Username</div>
-                <div class="inputbox"><input></div>
-            </div>
-
-            <div class="input">
-                <div class="label" id="registerpass">Password</div>
-                <div class="inputbox"><input></div>
-            </div>
-
-            <div class="input">
-                <div class="label" id="registeremail">E-Mail Address</div>
-                <div class="inputbox"><input></div>
-            </div>
-
-            <div class="input">
-                <div class="label" id="registerconfirmemail">Repeat E-Mail Address</div>
-                <div class="inputbox"><input></div>
-            </div>
-                
-            <div class="button2" id="register">
-                <button type="submit" class="createaccount">Create Account</button>
-            </div>
-            
-        </div>
-        
-        
-        <div id="footer">Cuyahoga Community College<br>700 Carnegie Avenue, Cleveland, OH 44115</div>
-        
         <script src="~/Scripts/jquery-2.1.1.min.js"></script>
         <script src="~/Scripts/jquery-ui.min.js"></script>
         <script src="~/Scripts/Home.js"></script>
+
+    <div class="index">
+
+        
+        <h1>Welcome to Cuyahoga Community College Student Services Online</h1>
+        <p>
+           Cuyahoga Community College recognizes students' rights to access personal and
+           academic records in accordance with the Family Educational Rights and Privacy Act
+           of 1974 (FERPA) as amended by Public Law 93-568.
+        </p>
+
+        <div class="container">
+
+            <div class="login">
+
+                <div class="logintext">Already have an account with us? Returning users may log in by entering their site username and password.</div>
+
+                <div class="data">
+                    <div class="mobiletext">Log In</div>
+                    <div class="label">Username </div>
+                    <input id="loginuser" type="text" name="username" />
+                    <div id="loginusererror" class="error"></div>
+                    <div class="label">Password </div>
+                    <input id="loginpass" type="password" name="password" />
+                    <div id="loginpasserror" class="error"></div>
+                    <div class="loginbutton">Log In</div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="registertext">New users, please create a new account by providing us with some basic information.</div>
+
+                <div class="data">
+                    <div class="mobiletext">Create Account</div>
+                    <div class="label">Username </div>
+                    <input id="registeruser" type="text" name="username">
+                    <div id="registerusererror" class="error"></div>
+                    <div class="label">Password </div>
+                    <input id="registerpass" type="password" name="password">
+                    <div id="registerpasserror" class="error"></div>
+                    <div class="label">Email </div>
+                    <input id="registeremail" type="text" name="email">
+                    <div id="registeremailerror" class="error"></div>
+                    <div class="label">Repeat E-mail Address </div>
+                    <input id="registeremailrepeat" type="text" name="email repeat">
+                    <div id="registeremailrepeaterror" class="error"></div>
+                    <div class="registerbutton">Create Account</div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="account">
+
+                <div class="information"></div>
+
+                <div class="divider"></div>
+
+                <div class="updateinformation">
+                    <div class="data">
+                        <div class="label">Element Name </div>
+                        <input id="elementname" type="text" name="elementname" />
+                        <div id="elementnameerror" class="error"></div>
+                        <div class="label">Element Value </div>
+                        <input id="elementvalue" type="text" name="elementvalue" />
+                        <div class="elementbutton">Add</div>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+
+        <footer>Cuyahoga Community College <br /> 700 Carnegie Avenue, Cleveland, Ohio 44115</footer>
+
+    </div>
 
     </body>
 

@@ -1,148 +1,353 @@
-    body {
-        width: 520px;
-        font-family: "Calibri";
-        font-size: 12px;
-        font-weight: regular;
-        text-align: left;
-    }
+﻿body 
+{
+    width: 520px;
+    font-family: Calibri;
+    font-size: 12px;
+}
 
-    h1 {
-        font-family: "Calibri";
-        font-size: 16px;
-        font-weight: bold;
-        text-align: left;
-    }
+.index
+{
+    height: 430px;
+}
 
-    .legal {
-        font-family: "Calibri";
-        font-size: 12px;
-        font-style: italic;
-        text-align: left;
-    }
+.h1
+{
+    font-family: Cambria;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
 
-    .logintable {
-        border: 1px solid black;
-        margin: auto;
-    }
+.index p 
+{
+    font-family: Calibri;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+}
 
-    .registertable {
-        border: 1px solid black;
-        margin: auto;
-    }
+.index .container 
+{
+    width: 520px;
+    height: 410px;
+}  
 
-    #logintextmobile {
-        display: none;
-    }
-
-    #registertextmobile {
-        display: none;
-    }
-
-    .inputbox {
-        flex: 2;
-    }
-
-    span {
-        padding-top: 12px;
-        width: 200px;
-        float: left;
-    }
-
-#registertext > span {
-    padding-top: 25px;
+.index .container .login 
+{
+    width: 520px;
+    height: 400px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid black;
+}
+    
+.index .container .login .logintext 
+{
     width: 200px;
-    float: left;
+    margin: 20px;
+    display: inline-block;
+    font-size: 13px;
 }
 
-    .input {
-        display:flex;
-    }
-
-.label {
-        flex: 1;
+.index .container .login .registertext 
+{
+    width: 200px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: 80px;
+    font-size: 13px;
 }
 
-.button1 {
-    text-align: right;
-    padding-right: 100;
+.index .container .login .data
+{
+    width: 250px;
+    display: inline-block;
 }
 
-.button2 {
-    text-align: right;
-    padding-right: 73;
+.index .container .login .data .error
+{
+    color: red;
+    font-weight: bold;
 }
 
-@media screen and (max-width: 320px) {
+.index .container .login .data .mobiletext
+{
+    display: none;
+}
 
-    body {
+.index .container .login .data input 
+{
+    width: 125px;
+    display: inline-block;
+}
+
+.index .container .login .data .label
+{
+    margin-top: 10px;
+    width: 120px;
+    display: inline-block;
+}
+
+.index .container .login .data .loginbutton 
+{
+    margin-top: 10px;
+    width: 60px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    left: 185px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightgray;
+} 
+
+.index .container .login .data .registerbutton 
+{
+    margin-top: 10px;
+    width: 80px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    left: 165px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.index .container .login .divider
+{
+    margin: 20px;
+    border-top: 2px solid lightgray;
+}
+
+.index .container .account 
+{
+    width: 520px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: absolute;
+    overflow: hidden;
+    left: 100%;
+}
+
+.index .container .account .information
+{
+    width: 400px;
+}
+
+.index .container .account .divider 
+{
+    margin: 20px;
+    border-top: 2px solid lightgray;
+}
+
+.index .container .account .updateinformation
+{
+    margin: auto;
+    width: 240px;
+}
+
+.index .container .account .updateinformation img 
+{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.index .container .account .updateinformation .data input 
+{
+    width: 125px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.index .container .account .updateinformation .data .label 
+{
+    display: inline-block;
+    width: 80px;
+}
+
+.index .container .account .updateinformation .data .error 
+{
+    color: red;
+    font-weight: bold;
+}
+
+.index .container .account .updateinformation .data .elementbutton 
+{
+    display: block;
+    border: 1px solid gray;
+    width: 30px;
+    position: relative;
+    left: 185px;
+    margin-top: 5px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 320px) 
+{
+    body 
+    {
         width: 300px;
-        font-family: "Calibri";
+        margin-left: 10px;
+        margin-right: 10px;
+        font-family: Calibri;
         font-size: 12px;
-        font-weight: regular;
-        margin: 10px;
-        text-align: center;
     }
 
-    h1 {
-        font-family: "Calibri";
+    .h1
+    {
+        font-family: Cambria;
         font-size: 16px;
         font-weight: bold;
         text-align: center;
     }
 
-    .legal {
-        font-family: "Calibri";
+    .index p 
+    {
+        font-family: Calibri;
         font-size: 12px;
         font-style: italic;
         text-align: center;
     }
 
-    .logintable {
-        border: 1px solid black;
-        margin: auto;
+    .index footer
+    {
         text-align: center;
     }
 
-    .registertable {
-        border: 1px solid black;
-        margin: auto;
-        text-align: center;
+    .index .container 
+    {
+        width: 300px;
     }
 
-    #logintext {
+    .index .container .login 
+    {
+        width: 300px;
+        height: 400px;
+    }
+
+    .index .container .login .divider 
+    {
+        margin: 15px;
+    }
+
+    .index .container .login .data 
+    {
+        width: 290px;
+    }
+
+    .index .container .login .data input 
+    {
+        margin-left: 10px;
+    }
+
+    .index .container .login .data .label 
+    {
+        margin-left: 20px;
+    }
+
+    .index .container .login .data .error 
+    {
+        margin-left: 20px;
+    }
+
+    .index .container .login .data .mobiletext 
+    {
+        display: block;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .index .container .login .logintext 
+    {
         display: none;
     }
 
-    #logintextmobile {
-        display: block;
-        font-weight: bold;
-    }
-
-    #registertext {
+    .index .container .login .registertext 
+    {
         display: none;
     }
 
-    #registertextmobile {
+    .index .container .login .data .loginbutton 
+    {
+        width: 280px;
+        height: 20px;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .index .container .login .data .registerbutton 
+    {
+        width: 280px;
+        height: 20px;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .index .container .account 
+    {
+        width: 300px;
+        height: 310px;
+    }
+
+    .index .container .account .information 
+    {
+        width: 290px;
+    }
+
+    .index .container .account .updateinformation 
+    {
+        width: 290px;
+    }
+
+    .index .container .account .updateinformation img 
+    {
+        display: none;
+    }
+
+    .index .container .account .updateinformation .data input 
+    {
         display: block;
-        font-weight: bold;
+        width: 200px;
+        margin-left: 40px;
     }
 
-    .input {
-        text-align: left;
+    .index .container .account .updateinformation .data .label 
+    {
+        display: block;
+        width: 80px;
+        margin: 5px;
+        margin-left: 40px;
     }
 
-    .inputbox {
-        text-align: right;
+    .index .container .account .updateinformation .data .error 
+    {
+        margin-left: 40px;
     }
 
-    .button1 {
-        text-align: center;
-        padding: 0px;
+    .index .container .account .updateinformation .data .elementbutton 
+    {
+        width: 200px;
+        height: 20px;
+        left: 40px;
+        font-size: 15px;
     }
 
-    .button2 {
-        text-align: center;
-        padding: 0px;
-    }
 }
 
+        
